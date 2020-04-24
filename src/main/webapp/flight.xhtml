@@ -7,6 +7,8 @@
 
 <h:head>
 
+
+
 <div class="ui-g">
     <div class="ui-g-12 ui-md-3">
         <p:staticMessage severity="info" summary="INFO!" detail="Hey, i'm a info!" />
@@ -22,10 +24,21 @@
     </div>
 </div>
 
-
 </h:head>
 <h:body>
-
+ <h:form>
+    <h1>Hello World!d 2zz</h1>
+    <br />
+    <br />
+    <p:outputLabel value="Name: " />
+    <p:inputText value="#{helloBean.name}" />
+    <br />
+    <p:outputLabel value="Description:" />
+    <p:editor value="#{helloBean.description}" width="500" />
+    <br />
+    <p:outputLabel for="date" value="Date:" />
+    <p:calendar id="date" value="#{helloBean.date}" mode="inline" />
+</h:form>
     <h:form>
 
         <p:panel>
