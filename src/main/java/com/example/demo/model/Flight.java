@@ -21,6 +21,8 @@ public class Flight {
     private Date scheduledDateTime;
     private Date estimatedDateTime;
     private Date actualDateTime;
+    
+    //Get Set
 	public Long getId() {
 		return id;
 	}
